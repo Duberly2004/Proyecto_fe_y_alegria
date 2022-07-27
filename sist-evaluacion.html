@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de evaluaciones</title>
+    <link rel="stylesheet" href="./css/sistema-de-evaluaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;200;400&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="logo-buttom">
+            <div class="logo">
+              <img src="./imagenes/Home/logo.png" alt="">
+              <h1>Fe<span class="color-acento"> y al</span>egría</h1>
+            </div>
+            <div class="buttom">
+              <a href="matricula.html">Matrícula</a>
+            </div>
+          </div>
+            <nav class="navegation">
+               <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+    
+                  <li><a href="niveles-acad.html">Niveles académicos</a>
+                    <ul class="sub-menu">
+                        <div>
+                          <li><a href="#a-primaria">Primaria</a></li>
+                          <li><a href="#a-secundaria">Secundaria</a></li>
+                      </div>
+                      </ul>
+                  </li>
+    
+                  <li><a href="nosotros.html">Nosotros</a>
+                    <ul class="sub-menu sub-nosotros">
+                        <div>
+                          <li><a href="nosotros.html">Fundador</a></li>
+                          <li><a href="nosotros.html">Autoridades</a></li>
+                          <li><a href="nosotros.html">Propósito </a></li>
+                          <li><a href="nosotros.html">Himno</a></li>
+                       </div>
+                    </ul>
+                  </li>
+    
+                  
+                  <li><a href="sist-evaluacion.html">Sistema de evaluación</a>
+                    <ul class="sub-menu">
+                        <div>
+                          <li><a href="calculadora.html">Calculadora</a></li>
+                        </div>
+                      </ul>
+                  
+                  </li>
+                  <li><a href="contactanos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+      </header>
+      <div class="espacio"></div>
+    
+      <!-- -------------------------------------------------- -->
+
+    <!-----------INGRESE EL CURSO--------->
+    <section class="evaluation-system">
+        <h1>SISTEMA DE EVALUACIÓN</h1>
+        <form action="">
+            <div class="container-grade-img">
+                <div class="grade">
+                    <label for="">Curso</label>
+                    <input type="text" placeholder="ingrese el curso">
+                    
+                </div>
+                <div class="student-photo">
+                    <img src="https://pbs.twimg.com/media/E46BfriWEAIJf2U.jpg" alt="">
+                    <p>Alumno</p>
+                </div>
+            </div>
+        </form>
+        <div class="avarange">
+            <!-----------PROMEDIO DE TEORIA--------->
+            <div class="conatiner-teo-lab">
+                <div class="avarange-theory">
+                    <table>
+                        <th colspan="2">Promedio de Teoría</th>
+                        <tr class="ntf">
+                            <td colspan="2" class="nota-final-guia">Nota final = 40% PA</td>
+                        </tr>
+                        <tr>
+                            <td>Bimestre <input style="border:none;" type="text"></td>
+                            <td>Nota</td>
+                        </tr>
+                        <tr>
+                            <td>Evaluación 1</td>
+                            <td><input type="text" id="teo1"></td>
+                        </tr>
+                        <tr>
+                            <td>Evaluación 2</td>
+                            <td><input type="text" id="teo2"></td>
+                        </tr>
+                        <tr>
+                            <td>Evaluación 3</td>
+                            <td><input type="text" id="teo3"></td>
+                        </tr>
+                        <tr>
+                            <td>Evaluación 4</td>
+                            <td><input type="text" id="teo4"></td>
+                        </tr>
+                        <tr>
+                            <td>Promedio de Teo:</td>
+                            <td><input type="text" id="avarange_teo"></td>
+                        </tr>
+
+                    </table>
+            </div>
+
+
+            <div class="avarange-laboratory">
+                <table>
+                    <th colspan="3">Promedio de laboratorio:</th>
+                    <tr class="ntf">
+                        <td colspan="2" class="nota-final-guia">Nota final = 60% PT</td>
+                    </tr>
+                    <tr>
+                        <td>Bimestre 1 <input style="border:none;" type="text"></td>
+                        <td>Nota</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluación 1</td>
+                        <td><input type="text" id="lab1"></td>
+                    </tr>
+                    <tr>
+                        <td>Evaluación 2</td>
+                        <td><input type="text" id="lab2"></td>
+                    </tr>
+                    <tr>
+                        <td>Evaluación 3</td>
+                        <td><input type="text" id="lab3"></td>
+                    </tr>
+                    <tr>
+                        <td>Evaluación 4</td>
+                        <td><input type="text" id="lab4"></td>
+                    </tr>
+                    <tr>
+                        <td>Promedio de Lab:</td>
+                        <td><input type="text" id="avarange_lab"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="row2">
+
+           
+            <table>
+                <th colspan="2">Calcular promedio</th>
+                <tr class="ntf">
+                    <td colspan="2" class="nota-final-guia">Nota final = 40% PA + 60% PT</td>
+                </tr>
+                <tr>
+                    <td>Promedio Teo</td>
+                    <td><input type="text" id="avarange_teo_final"></td>
+                </tr>
+                <tr>
+                    <td>Promedio Lab</td>
+                    <td><input type="text" id="avarange_lab_final"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr id="linea" ></td>
+                </tr>
+                <tr>
+                    <td class="td-buttom">Promedio Final : <button id="buttom" value="calcular" type="button" onclick="calculate()">calcular</button></td>
+                   
+                    <td><input type="text" id="avarange_final"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="respuestas" cols="30" rows="10"></textarea></td>
+                </tr>
+                
+            </table>
+        </div>
+       </div>
+    </section>
+    <!-----------------FOOTER------------>
+
+  <footer>
+
+    <div class="final">
+        <div class="item1">
+        <div class="parrafo">
+            <P>IE.Fe Y ALEGRÍA N°29</P>
+            <p class="direccion">AV. Principal    S/N   -  Ampliación "A"</p>
+        </div>
+        <P>Ventanilla Alta-Callao</P>
+        <p>Correo institucional <a href="#"> fya29s@hotmail.com - fya29cs@gmail.com</a></p>
+    
+        </div>
+
+        <div class="item2">
+            <P>TELEFONOS:</P>
+            <P>SECRETARIA: 994976721</P>
+            <P>TELEF.INSTITUCIONAL: 964441530</P>
+        </div>
+
+        <div class="item3">
+            
+            <a href="https://wa.link/4i7vcl" target="_blank"><img src="imagenes/Home/whatsapp.png" alt=""></a>
+
+            <a href="http://www.facebook.com/sharer.php?u=https://aipfeyalegria29.jimdofree.com/&t=P%C3%A1gina%20web%20de%20aipfeyalegria29" target="_blank"><img src="imagenes/Home/facebook.png" alt=""></a>
+            <a href="http://twitter.com/share?text=P%C3%A1gina%20web%20de%20aipfeyalegria29&url=https%3A%2F%2Faipfeyalegria29.jimdofree.com%2F" target="_blank"><img src="imagenes/Home/twitter.png" alt=""></a>
+        </div>
+    </div>
+    
+
+  </footer>
+    <script src="js/sistema-evaluacion.js" ></script>
+    
+</body>
+</html>

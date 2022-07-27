@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+
+    <script src="js/display.js" type="text/javaScript"></script>
+    <script src="js/calculadora.js" type="text/javaScript"></script>
+    <script src="js/index.js" type="text/javaScript" defer ></script>
+
+
+    
+    <!-- con la palabra defer lograremos que se ejecute el javascript luego de aver ejercutado lo elementos del body -->
+
+</head>
+<body>
+
+    <!-- HEADER  -->
+  <header>
+    <div class="logo-buttom">
+        <div class="logo">
+          <img src="./imagenes/Home/logo.png" alt="">
+          <h1>Fe<span class="color-acento"> y al</span>egría</h1>
+        </div>
+        <div class="buttom">
+          <a href="matricula.html" target="_blank">Matrícula</a>
+        </div>
+      </div>
+        <nav class="navegation">
+           <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="niveles-acad.html">Niveles académicos</a>
+                <ul class="sub-menu">
+                    <div>
+                      <li><a href="niveles-acad.html">Primaria</a></li>
+                      <li><a href="niveles-acad.html">Secundaria</a></li>
+                  </div>
+                  </ul>
+              </li>
+
+              <li><a href="nosotros.html">Nosotros</a>
+                <ul class="sub-menu sub-nosotros">
+                    <div>
+                      <li><a href="nosotros.html">Fundador</a></li>
+                      <li><a href="nosotros.html">Autoridades</a></li>
+                      <li><a href="nosotros.html">Propósito </a></li>
+                      <li><a href="nosotros.html">Himno</a></li>
+                   </div>
+                </ul>
+              </li>
+
+              
+              <li><a href="sist-evaluacion.html">Sistema de evaluación</a>
+                <ul class="sub-menu">
+                    <div>
+                      <li><a href="calculadora.html">Calculadora</a></li>
+                    </div>
+                  </ul>
+              
+              </li>
+              <li><a href="contactanos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+  </header>
+  <div class="espacio"></div>
+
+
+
+    <section>
+        <div class="container">
+          <div class="calculadora">
+            <div class="display">
+                
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>  
+            </div>
+            <button onclick="display.borrarTodo()" class="col-2">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">x</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+     </div>
+  </section>
+  
+
+  
+
+  <!-----------------FOOTER------------>
+
+  <footer>
+
+    <div class="final">
+        <div class="item1">
+        <div class="parrafo">
+            <P>IE.Fe Y ALEGRÍA N°29</P>
+            <p class="direccion">AV. Principal    S/N   -  Ampliación "A"</p>
+        </div>
+        <P>Ventanilla Alta-Callao</P>
+        <p>Correo institucional <a href="#"> fya29s@hotmail.com - fya29cs@gmail.com</a></p>
+    
+        </div>
+
+        <div class="item2">
+            <P>TELEFONOS:</P>
+            <P>SECRETARIA: 994976721</P>
+            <P>TELEF.INSTITUCIONAL: 964441530</P>
+        </div>
+
+        <div class="item3">
+            
+            <a href="https://wa.link/4i7vcl" target="_blank"><img src="imagenes/Home/whatsapp.png" alt=""></a>
+
+            <a href="http://www.facebook.com/sharer.php?u=https://aipfeyalegria29.jimdofree.com/&t=P%C3%A1gina%20web%20de%20aipfeyalegria29" target="_blank"><img src="imagenes/Home/facebook.png" alt=""></a>
+            <a href="http://twitter.com/share?text=P%C3%A1gina%20web%20de%20aipfeyalegria29&url=https%3A%2F%2Faipfeyalegria29.jimdofree.com%2F" target="_blank"><img src="imagenes/Home/twitter.png" alt=""></a>
+        </div>
+    </div>
+    
+
+  </footer>
+
+
+
+
+</body>
+</html>

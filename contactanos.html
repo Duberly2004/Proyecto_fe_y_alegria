@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de rejistro </title>
+    <link rel="stylesheet" href="./css/contactanos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-buttom">
+            <div class="logo">
+              <img src="./imagenes/Home/logo.png" alt="">
+              <h1>Fe<span class="color-acento"> y al</span>egría</h1>
+            </div>
+            <div class="buttom">
+              <a href="matricula.html" target="_blank">Matrícula</a>
+            </div>
+          </div>
+            <nav class="navegation">
+               <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+    
+                  <li><a href="niveles-acad.html">Niveles académicos</a>
+                    <ul class="sub-menu">
+                        <div>
+                          <li><a href="#a-primaria">Primaria</a></li>
+                          <li><a href="#a-secundaria">Secundaria</a></li>
+                      </div>
+                      </ul>
+                  </li>
+    
+                  <li><a href="nosotros.html">Nosotros</a>
+                    <ul class="sub-menu sub-nosotros">
+                        <div>
+                          <li><a href="nosotros.html">Fundador</a></li>
+                          <li><a href="nosotros.html">Autoridades</a></li>
+                          <li><a href="nosotros.html">Propósito </a></li>
+                          <li><a href="nosotros.html">Himno</a></li>
+                       </div>
+                    </ul>
+                  </li>
+    
+                  
+                  <li><a href="sist-evaluacion.html">Sistema de evaluación</a>
+                    <ul class="sub-menu">
+                        <div>
+                          <li><a href="calculadora.html">Calculadora</a></li>
+                        </div>
+                      </ul>
+                  
+                  </li>
+                  <li><a href="contactanos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+      </header>
+    
+    <!-- ---------------------------------------------------->
+      <div class="espacio"></div>
+    <section class="contactanos">
+        <h1>Contactenos</h1>
+        <form action="">
+
+            <div class="table1-table2">
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input id="name" type="text" placeholder="ingrese su nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>DNI</td>
+                        <td><input id="dni" type="text" placeholder="ingrese su DNI"></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                        <td><input id="direction" type="text" placeholder="ingrese su Dirección"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono</td>
+                        <td><input id="phone" type="text" placeholder="ingrese su telefono"></td>
+                    </tr>
+                </table>
+            
+           
+                <table>
+                    <tr>
+                        <td>Apellidos</td>
+                        <td><input id="surnames" type="text"placeholder="ingrese su apellidos"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="" id="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Ocupación</td>
+                        <td  class="menu-list"><select name="ocupación" id="menu_list">
+                            <option name="ocupación" id="menu_list" value="Docente">Docente</option>
+                            <option name="ocupación" id="menu_list" value="Estudiante">Estudiante</option>
+                            <option name="ocupación" id="menu_list" value="Padre de Familia">Padre de familia</option>
+                            <option name="ocupación" id="menu_list" value="Otro">otro</option>
+                        </select></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table3">
+                <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend class="asunto">Asunto</legend>
+                            <textarea name="" id="affair" cols="30" rows="10"></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="buttom" value="calcular"type="button"  onclick="click_form()">Enviar</button></td>
+                </tr>
+                </table>
+            </div>
+        </form>
+    </section>
+    <section class="aliados_section">
+        <h1>Aliados</h1>
+        <div class="aliados">
+
+            <div class="container-img-aliados">
+                <img src="./imagenes/Contactanos/img_aliado1.png" alt="">
+              
+            </div>
+            <div class="container-img-aliados">
+                <img src="./imagenes/Contactanos/img_aliado2.png" alt="">
+               
+            </div>
+            <div class="container-img-aliados">
+                <img src="./imagenes/Contactanos/img_aliado3.png" alt="">
+                
+            </div>
+            <div class="container-img-aliados">
+                <img src="./imagenes/Contactanos/img_aliado4.png" alt="">
+               
+            </div>
+        </div>
+  </section>
+     <!-----------------FOOTER------------>
+
+  <footer>
+
+    <div class="final">
+        <div class="item1">
+        <div class="parrafo">
+            <P>IE.Fe Y ALEGRÍA N°29</P>
+            <p class="direccion">AV. Principal    S/N   -  Ampliación "A"</p>
+        </div>
+        <P>Ventanilla Alta-Callao</P>
+        <p>Correo institucional <a href="#"> fya29s@hotmail.com - fya29cs@gmail.com</a></p>
+    
+        </div>
+
+        <div class="item2">
+            <P>TELEFONOS:</P>
+            <P>SECRETARIA: 994976721</P>
+            <P>TELEF.INSTITUCIONAL: 964441530</P>
+        </div>
+
+        <div class="item3">
+            
+            <a href="https://wa.link/4i7vcl" target="_blank"><img src="imagenes/Home/whatsapp.png" alt=""></a>
+
+            <a href="http://www.facebook.com/sharer.php?u=https://aipfeyalegria29.jimdofree.com/&t=P%C3%A1gina%20web%20de%20aipfeyalegria29" target="_blank"><img src="imagenes/Home/facebook.png" alt=""></a>
+            <a href="http://twitter.com/share?text=P%C3%A1gina%20web%20de%20aipfeyalegria29&url=https%3A%2F%2Faipfeyalegria29.jimdofree.com%2F" target="_blank"><img src="imagenes/Home/twitter.png" alt=""></a>
+        </div>
+    </div>
+    
+
+  </footer>
+    <script src="./js/contactanos.js"></script>
+
+    
+</body>
+</html>
+                       
