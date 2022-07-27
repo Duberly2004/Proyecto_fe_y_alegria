@@ -1,0 +1,1250 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 0;
+  background-color: rgb(240,240,240);
+  --color-red:rgb(245, 9, 9);
+  --color-menu:rgb(252, 230, 230);
+  --color-menu-hover:rgba(245, 238, 238, 0.822);
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.contenido{
+  padding: 0px 10%;
+}
+
+
+/*---------HEADER-------*/
+
+header{
+  width: 100%;
+  background-color: var(--color-menu);
+  position: fixed;
+  z-index: 3;
+
+  
+}
+.espacio{
+  height: 150px;
+}
+header h1{
+  font-size: 24px;
+}
+header a{
+  font-size: 15px;
+}
+/*--------BUTTOM MATRÍCULA------ */
+.buttom{
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+.logo-buttom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.logo-buttom .buttom a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 8px;
+  font-size: 16px;
+  border-radius:5px;
+  background-color:rgb(46, 43, 43);
+}
+.logo-buttom a:hover{
+  background-color: rgba(0, 0, 0, 0.945);
+}
+/*-------------LOGO--------------*/
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  max-width: 20%;
+}
+.logo h1{
+  padding-left:2% ;
+  color: rgb(11, 11, 20);
+}
+.logo .color-acento{
+  color:var(--color-red);
+}
+/*-----------------LINKS---------------*/
+
+.menu{
+  margin-left: 3%;
+}
+.menu li{
+  list-style: none;
+}
+.menu > li{ 
+  position: relative;
+  display: inline-block; 
+}
+.menu li a{
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 10px;
+  color: black;
+}
+.menu a:hover{
+  color:var(--color-red);
+  transition: all .1s;
+  cursor: pointer;
+  background-color: var(--color-menu-hover);
+}
+.sub-menu{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  overflow: hidden;
+  z-index: 3;
+}
+.menu li:hover .sub-menu{
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu div{
+  transform: translate(0,-100%);
+  transition: all 0.2s 0.1s;
+  position: absolute;
+
+}
+.sub-nosotros{
+  padding: 0 0;
+  
+}
+.menu :hover ul div{
+  transform: translate(0,0);
+  position: relative;
+  background-color: rgb(253, 250, 250);
+}
+@media (max-width: 780px){
+  h1{
+    text-align: center;
+  }
+  header{
+    position: relative;
+
+  }
+  .espacio{
+     display: none;
+  }
+  #tittle{
+    text-align: center;
+  }
+
+ header h1{
+  font-size: 40px;
+ }
+ header a{
+  font-size: 20px;
+ }
+ header .logo img{
+  height: 100%;
+
+ }
+ .navegation{
+  text-align: center;
+ }
+ .menu{
+  display: flex;
+  flex-direction: column;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-- SECCION NUESTROS AMBIENTES --*/
+
+
+
+#tittle{
+  font-size: 1.5em;
+  
+}
+
+.cont-img-aulas{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.cont-img-aulas img{
+  margin: 5px 10px;
+  width: clamp(300px,30%,500px);
+  border-radius: 6px;
+}
+
+
+.cont-amb-left{
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cont-amb-left p, .cont-amb-right p{
+  width: 70%;
+  padding: 0px 5%;
+}
+
+.cont-amb-right{
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cont-img{
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: clamp(300px,30%,500px);
+}
+
+.cont-img h3{
+  background-color: rgb(255, 240, 240);
+  border-radius: 8px;
+  border: 2px solid rgb(0, 0, 0);
+  border-style: dashed;
+  margin: -8px 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.cont-img img{
+  border: 2px solid rgb(0, 0, 0);
+  border-style: dashed;
+  border-radius: 2px;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+/*-- SECCION DOCENTES DE PRIMARIA --*/
+
+.docentes-primaria{
+  margin-top: 80px;
+}
+
+.docent-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.cont-docentes{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.cont-docentes h3{
+  text-align: center;
+}
+
+.cont-d-g{
+  display: flex;
+  flex-direction: row;
+}
+.transition-text-card{
+  
+  margin: 0px 5px;
+  height: 210px;
+  width:200px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px;
+  border-radius:5px;
+  overflow: hidden;
+  background-image: linear-gradient(0deg, rgba(48, 48, 48, 0.082), rgba(0, 0, 0, 0.062));
+  background-size: cover;
+}
+.cont-d-aip{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cont-docentes-aip h3{
+  text-align: center;
+}
+
+      /*--------- PROFESORES --------*/
+
+.s-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/sonia-rios.png");
+}
+.s-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/elizabet-castilla-tasayco.png");
+}
+.s-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/veronica-paucar-cueva.png");
+}
+
+
+.q-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/meliza-grasse.png");
+}
+.q-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/maritza-raquel.png");
+}
+.q-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/allison-quispe.png");
+}
+
+
+.c-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/raosario-pilar.png");
+}
+.c-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/ana-cecilia.png");
+}
+.c-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/mirta-vasques.png");
+}
+
+
+.t-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/maria-felina.png");
+}
+.t-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/nelly-lloclla.png");
+}
+.t-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/rosa-maria.png");
+}
+
+
+.sg-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/mariela-preciado.png");
+}
+.sg-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/luz-elizabeth.png");
+}
+.sg-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/ingrid-janeth.png");
+}
+
+
+.p-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/milagro-fuentes.png");
+}
+.p-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/doris-amelia.png");
+}
+.p-prof3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/sintia-salasar.png");
+}
+
+
+.aip-prof1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/jeferson-jara.png");
+}
+.aip-prof2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Prim/patricia-rosa.png");
+}
+
+
+
+
+
+    /*------- HOVER DE LOS PROFESORES ------*/
+
+.s-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/sonia-rios.png");
+}
+.s-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/elizabet-castilla-tasayco.png");
+}
+.s-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/veronica-paucar-cueva.png");
+}
+
+
+.q-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/meliza-grasse.png");
+}
+.q-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/maritza-raquel.png");
+}
+.q-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/allison-quispe.png");
+}
+
+
+.c-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/raosario-pilar.png");
+}
+.c-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/ana-cecilia.png");
+}
+.c-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/mirta-vasques.png");
+}
+
+
+.t-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/maria-felina.png");
+}
+.t-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/nelly-lloclla.png");
+}
+.t-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/rosa-maria.png");
+}
+
+
+.sg-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/mariela-preciado.png");
+}
+.sg-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/luz-elizabeth.png");
+}
+.sg-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/ingrid-janeth.png");
+}
+
+
+.p-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/milagro-fuentes.png");
+}
+.p-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/doris-amelia.png");
+}
+.p-prof3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/sintia-salasar.png");
+}
+
+
+.aip-prof1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/jeferson-jara.png");
+}
+.aip-prof2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Prim/patricia-rosa.png");
+}
+
+
+
+
+
+.text-card{
+  margin-top: 3.5em;
+  transition: 700ms ease;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.text-card h2{
+  font-size: 1.5em;
+  font-weight: 650;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-card h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.transition-text-card:hover .text-card{
+  transform: translateY(-7px);
+  opacity: 1;
+}
+
+
+
+/*-- SECTION CURSOS DE PRIMARIA --*/
+
+.cursos-primaria{
+  margin-top: 80px;
+}
+
+.cont-cursos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-cursos h3{
+  text-align: center;
+}
+
+.cont-c-p{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.name-cours{
+  display: flex;
+  justify-content: center;
+}
+
+.transition-text-card:hover .p-c{
+  transform: translateY(50px);
+  opacity: 1;
+}
+
+
+
+  /*------- CURSOS PRIMARIA -----*/
+
+.matematica{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/matematica.png");
+  transition: all 500ms ease;
+}
+.comunicacion{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/comunicacion.png");
+  transition: all 500ms ease;
+}
+.c-y-t{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/ciencia-y-tecnologia.png");
+  transition: all 500ms ease;
+}
+.desarr-perso{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/desarrollo-personal.png");
+  transition: all 500ms ease;
+}
+.computacion{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/computacion.png");
+  transition: all 500ms ease;
+}
+.arte-y-cultura{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/arte.png");
+  transition: all 500ms ease;
+}
+.religion{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/religion.png");
+  transition: all 500ms ease;
+}
+.fcc{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-primaria/formacion-cuidadana-y-civica.png");
+  transition: all 500ms ease;
+}
+
+
+
+
+
+    /*------- HOVER DE LOS CURSOS-PRIMARIA ------*/
+
+.matematica:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/matematica.png");
+  transform: translateY(-4%);
+}
+.comunicacion:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/comunicacion.png");
+  transform: translateY(-4%);
+}
+.c-y-t:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/ciencia-y-tecnologia.png");
+  transform: translateY(-4%);
+}
+.desarr-perso:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/desarrollo-personal.png");
+  transform: translateY(-4%);
+}
+.computacion:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/computacion.png");
+  transform: translateY(-4%);
+}
+.arte-y-cultura:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/arte.png");
+  transform: translateY(-4%);
+}
+.religion:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/religion.png");
+  transform: translateY(-4%);
+}
+.fcc:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-primaria/formacion-cuidadana-y-civica.png");
+  transform: translateY(-4%);
+}
+
+
+
+/*-- SECTION DOCENTES DE SECUNDARIA  --*/
+
+
+.docent-row-secu{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.duo .transition-text-card{
+  margin: 15px 10px;
+}
+
+
+.cont-docentes-column{
+  text-align: center;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tittle-d{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.s-sec-prof-1, .s-sec-prof-2{
+  height: 200px;
+  width:190px;
+}
+
+.a-y-r{
+  display: flex;
+  justify-content: center;
+  padding: 0 0;
+}
+
+.cont-docentes-cd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.cont-d-s{
+  text-align: center;
+}
+
+.cont-docentes-column , .cont-docentes-cd , .docentes-secundaria .cont-docentes{
+  margin-top: 18px; 
+}
+
+
+  /*------- PROFESORES SECUNDARIA -----*/
+.q-sec-prof-1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/wilmer-espinoza.png");
+}
+.q-sec-prof-2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/felix-rojas.png");
+}
+.q-sec-prof-3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/marialena-aponte.png");
+}
+.q-sec-prof-4{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/wilmer-montoya.png");
+}
+
+
+.c-sec-prof-1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/wilder-fustamante.png");
+}
+.c-sec-prof-2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/marcos-chozo.png");
+}
+.c-sec-prof-3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/victor-juarez.png");
+}
+.c-sec-prof-4{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/yolanda-sandoval.png");
+}
+
+
+.t-sec-prof-1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/gladys-mayanga.png");
+}
+.t-sec-prof-2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/nancy-racchumi.png");
+}
+.t-sec-prof-3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/dunia-solis.png");
+}
+.t-sec-prof-4{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/zuleyka-untiveros.png");
+}
+
+
+
+.s-sec-prof-1{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/carlos-diaz.png");
+}
+.s-sec-prof-2{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/oscar-ortega.png");
+}
+.s-sec-prof-3{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/marilu-peralta.png");
+}
+.s-sec-prof-4{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/anibal-uscamayta.png")
+}
+.s-sec-prof-5{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/magna-herrera.png");
+}
+.s-sec-prof-6{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/dunia-solis.png");
+}
+.s-sec-prof-7{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/manuel-napa.png");
+}
+.s-sec-prof-8{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/marcos-yerren.png");
+}
+.s-sec-prof-9{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/vilma-modesto.png");
+}
+.s-sec-prof-10{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/marco-sanchez.png");
+}
+.s-sec-prof-11{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/martin-auris.png");
+}
+.s-sec-prof-12{
+  background-image: url("../imagenes/Niveles-Academicos/Profesores-Secu/manuel-canchachi.png");
+}
+
+
+
+
+
+    /*------- HOVER DE LOS PROFESORES ------*/
+
+.q-sec-prof-1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/wilmer-espinoza.png");
+}
+.q-sec-prof-2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/felix-rojas.png");
+}
+.q-sec-prof-3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/marialena-aponte.png");
+}
+.q-sec-prof-4:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/wilmer-montoya.png");
+}
+
+
+.c-sec-prof-1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/wilder-fustamante.png");
+}
+.c-sec-prof-2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/marcos-chozo.png");
+}
+.c-sec-prof-3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/victor-juarez.png");
+}
+.c-sec-prof-4:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/yolanda-sandoval.png");
+}
+
+
+.t-sec-prof-1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/gladys-mayanga.png");
+}
+.t-sec-prof-2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/nancy-racchumi.png");
+}
+.t-sec-prof-3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/dunia-solis.png");
+}
+.t-sec-prof-4:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/zuleyka-untiveros.png");
+}
+
+
+.s-sec-prof-1:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/carlos-diaz.png");
+}
+.s-sec-prof-2:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/oscar-ortega.png");
+}
+.s-sec-prof-3:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/marilu-peralta.png");
+}
+.s-sec-prof-4:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/anibal-uscamayta.png");
+}
+.s-sec-prof-5:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/magna-herrera.png");
+}
+.s-sec-prof-6:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/dunia-solis.png");
+}
+.s-sec-prof-7:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/manuel-napa.png");
+}
+.s-sec-prof-8:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/marcos-yerren.png");
+}
+.s-sec-prof-9:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/vilma-modesto.png");
+}
+.s-sec-prof-10:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/marco-sanchez.png");
+}
+.s-sec-prof-11:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/martin-auris.png");
+}
+.s-sec-prof-12:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/Profesores-Secu/manuel-canchachi.png");
+}
+
+
+
+
+
+.cont-d-s{
+  display: flex;
+  flex-direction: row;
+}
+
+.q-sec-prof-1, .q-sec-prof-2, .q-sec-prof-3, .q-sec-prof-4, .c-sec-prof-1, .c-sec-prof-2, .c-sec-prof-3, .c-sec-prof-4, .t-sec-prof-1, .t-sec-prof-2, .t-sec-prof-3, .t-sec-prof-4
+{
+  height: 205px;
+  width:195px;
+}
+
+
+
+/*------SECCION DE CURSOS DE SECUNDARIA-----*/
+
+.cursos-secundaria{
+  margin-top: 80px;
+  margin-left: -30px;
+}
+
+.cursos-secundaria h1{
+  margin-left: 30px;
+}
+
+
+
+  /*---- CURSOS SECUNDARIA  ----*/
+.matematica-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/matematica.png");
+  transition: all 500ms ease;
+}
+.comunicacion-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/comunicacion.png");
+  transition: all 500ms ease;
+}
+.c-y-t-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/ciencia-y-tecnologia.png");
+  transition: all 500ms ease;
+}
+.desarr-perso-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/desarrollo-personal.png");
+  transition: all 500ms ease;
+}
+.educ-fisica-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/educacion-fisica.png");
+  transition: all 500ms ease;
+}
+.ingles-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/ingles.png");
+  transition: all 500ms ease;
+}
+.historia-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/historia.png");
+  transition: all 500ms ease;
+}
+.fisica-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/fisica.png");
+  transition: all 500ms ease;
+}
+.religion-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/religion.png");
+  transition: all 500ms ease;
+}
+.arte-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/arte-y-cultura.png");
+  transition: all 500ms ease;
+}
+.ciencias-sociales-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/ciencias-sociales.png");
+  transition: all 500ms ease;
+}
+.fpt-sec{
+  background-image: url("../imagenes/Niveles-Academicos/cursos-secundaria/formacion-para-el-trabajo.png");
+  transition: all 500ms ease;
+}
+
+
+    /*------- HOVER DE LOS CURSOS SECUNDARIA ------*/
+
+.matematica-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/matematica.png");
+  transform: translateY(-4%);
+}
+.comunicacion-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/comunicacion.png");
+  transform: translateY(-4%);
+}
+.c-y-t-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/ciencia-y-tecnologia.png");
+  transform: translateY(-4%);
+}
+.desarr-perso-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/desarrollo-personal.png");
+  transform: translateY(-4%);
+}
+.educ-fisica-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/educacion-fisica.png");
+  transform: translateY(-4%);
+}
+.ingles-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/ingles.png");
+  transform: translateY(-4%);
+}
+.historia-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/historia.png");
+  transform: translateY(-4%);
+}
+.fisica-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/fisica.png");
+  transform: translateY(-4%);
+}
+.religion-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/religion.png");
+  transform: translateY(-4%);
+}
+.arte-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/arte-y-cultura.png");
+  transform: translateY(-4%);
+}
+.ciencias-sociales-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/ciencias-sociales.png");
+  transform: translateY(-4%);
+}
+.fpt-sec:hover{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.362), rgba(0, 0, 0, 0.362)),
+  url("../imagenes/Niveles-Academicos/cursos-secundaria/formacion-para-el-trabajo.png");
+  transform: translateY(-4%);
+}
+
+
+
+
+
+
+/*------------------FOOTER---------------*/
+footer{
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.945);
+  color: white;
+}
+.item3 img{
+  display: block;
+  width: 50px;
+}
+
+.final{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+.parrafo{
+  display: flex;
+}
+.parrafo .direccion{
+  margin-left: 60px;
+}
+.item1{
+  padding: 20px
+}
+.item3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width:1060px){
+  .cont-cont{
+      width: 100%;
+
+  }
+  .container-imagenes{
+      grid-template-columns: auto auto ;
+  }
+  .objetivos,.cont-primari-technical{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+ .cont-primari-technical{
+  border: none;
+ }
+ .final{
+  grid-template-columns: auto;
+ }
+ 
+ .item2,.item1{
+  text-align: center;
+ }
+ .item3{
+  justify-content: center;
+ }
+ .item3 img{
+  margin: 15px;
+ }
+}
+
+
+@media (min-width: 838px){
+  .espacio{
+      height: 127px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1850px){
+
+  #docent-ttt{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cont-docentes-column{
+    width: 30%;
+  }
+
+  .cont-docentes-cd{
+    width: 60%;
+  }
+
+
+
+  .docent-row-secu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cont-d-s{
+    width: 80%;
+  }
+
+  .duo{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+
+
+
+@media (max-width: 1200px){
+
+  .cont-docentes-column{
+    width: 50%;
+  }
+
+  .cont-docentes-cd{
+    width: 100%;
+  }
+
+  .cont-d-s{
+    width: 98%;
+  }
+
+}
+
+@media (max-width: 730px){
+  .cont-docentes-column{
+    width: 100%;
+  }
+
+  .cont-d-s{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/*------------- RESPONSIVE SECTION 3  --------*/
+
+@media (max-width:1630px){
+  .cont-c-p{
+    flex-wrap: wrap;
+  }
+}
+
+
+/*------------ RESPONSIVE SECTION 2  -------*/
+
+@media (max-width:1670px){
+
+  .cont-d-g{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .transition-text-card{
+    margin: 10px 10px;
+  
+  }
+}
+
+@media (max-width:1190px){
+
+  .docent-row{
+    flex-direction: column;
+  }
+  
+  .cont-docentes{
+    width: 100%;
+  }
+
+  .cont-d-g{
+    flex-direction: row;
+  }
+}
+
+@media (max-width:570px){
+  .transition-text-card{
+    width: 80%;
+    height: 40vh;
+  }
+
+  .cont-d-aip{
+    flex-wrap: wrap;
+  }
+
+  .contenido{
+    padding: 0px 0px;
+  }
+
+
+
+  .cont-docentes-cd{
+    width: 100%;
+  }
+  .cont-d-s{
+    width: 95%;
+  }
+
+}
+
+
+/*------ RESPONSIVE SECTION 1  ----*/
+
+@media (max-width: 850px){
+
+  .cont-amb-right , .cont-amb-left{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cont-img{
+    width: clamp(300px, 85%, 90% );
+  }
+
+  .cont-amb-right p, .cont-amb-left p{
+    width: 90%;
+  }
+}
